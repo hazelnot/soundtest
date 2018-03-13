@@ -4,8 +4,7 @@ window.onload = function(){
 }
 
 //print slider value
-function SliderVal(){
+function sliderVal(){
   var slider = $(".slider1").val();
   console.log(slider);
 };
-

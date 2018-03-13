@@ -1,14 +1,63 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="UTF-8"> 
 		<title>Music Matching</title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script type="text/javascript" src="slide.js"></script>
 	</head>
 	<body>
-	  <div class = "container" id = "content">
+	<!-- container div for alll the boxesss -->
+	  <div class = "container">
+	  	<div class = "boxtitles" id = "pagetitle">Music Affecting a Game</div>
+	<!-- Left Pane -->
+		<div class = "content">
+		  	<div class = "leftpane">
+		  		<!-- Container for Spotify Boxes -->
+		  		<div class = "invisibox" id = "music">
+			  		<div class = "boxtitles">Song List</div>
+			  		<div class = "songbox">
+						<div class="spotify"></div>
+			  			<div class="songdata">
+			  				<div class="songname">Paint It Black</div>
+			  				<div class="artistdata">The Rolling Stones • Aftermath...</div>
+			  			</div>
+			  		</div>
+			  		<div class = "songbox">
+			  			<div class="spotify"></div>
+			  			<div class="songdata">
+			  				<div class="songname">Autumn Leaves</div>
+			  				<div class="artistdata">Chet Baker • My Funny Valentine...</div>
+			  			</div>
+			  		</div>
+			  		<div class = "songbox">
+			  			<div class="spotify"></div>
+			  			<div class="songdata">
+			  				<div class="songname">Hips Don't Lie</div>
+			  				<div class="artistdata">Shakira, Wyclef Jean • Oral...</div>
+			  			</div>
+			  		</div>
+		 		</div>
+		 		<!-- Container for Frequency Analysis Boxes -->
+			 	<div class = "invisibox" id = "frequencies">
+					<div class = "boxtitles">Frequency Analysis</div>
+			  		<div class = "visibox" id = "freqbox">
+			  			<span class="temp">GIF GOES HERE</span>
+			  		</div>
+			  		<div class = "visibox" id = "textbox">
+			  			<span class="temp">TEXT GOES HERE</span>
+			  		</div>
+			 	</div>
+		 	</div>
+		 	<div class="rightpane">
+		 		<div class = "invisibox" id = "games">
+		 			<div class = "boxtitles">Game: <span class="gametitle">Striker 1945</span></div>
+		 		</div>
+		 	</div>
+	 	</div>
 		<input class = "slider1" type = "range" min = "0" max = "3">
 	  </div>
+	</div>
 	</body>
 </html>
