@@ -1,5 +1,6 @@
 body{
 	background-color: #f9f9f9;
+	line-height: 1.3em;
 }
 
 #pagetitle{
@@ -29,13 +30,14 @@ body{
 	margin-bottom: 1.5rem;
 	font-size: 1.3em;
 	font-weight: 300;
+	height: 24px;
 }
 
 .visibox{
 	border: 2px solid #A5A5A5;
 	text-align: center;
 	vertical-align: middle;
-	font-family: cursive;
+	font-family: "Comic Sans MS";
 	color:  #FF69B4;
 	font-size: 30px;
 }
@@ -95,7 +97,7 @@ body{
 }
 
 #freqbox{
-	height: 15rem;
+	height: 27.3rem;
 	width: 20rem;
 }
 
@@ -104,6 +106,8 @@ body{
 	height: 10rem;
 	width: 20rem;
 }
+
+/* End of Frequency Analysis */
 
 /* Right Pane */
 
@@ -116,7 +120,27 @@ body{
 	font-weight: 500;
 }
 
-/* End of Frequency Analysis */
+#gamescreen{
+	height: 44.6rem;
+	width: 31rem;
+}
+
+/* End of Right Pane */
+
+/* Wave Box */
+
+#wave{
+	height: 8rem;
+	width: 100%;
+}
+
+#wavebox{
+	margin-top: 2rem;
+}
+
+/* End of Wave Box */
+
+/* Skinning the Slider */
 
 .slider1{
 	width: 100%;
@@ -124,8 +148,6 @@ body{
 	margin: 0 auto;
 	margin-top: 3rem;
 }
-
-/* Skinning the Slider */
 
 input[type=range]{
 	-webkit-appearance: none;
@@ -138,8 +160,7 @@ input[type=range]::-webkit-slider-thumb{
 	height: 25px;
 	width: 25px;
 	border-radius: 50%;
-	border: 2px solid #A5A5A5;
-	background-color: #E8E8E8);
+	background-color: #1db954;
 	margin-top: -14px;
 }
 
