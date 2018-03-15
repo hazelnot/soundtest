@@ -23,7 +23,7 @@ body{
 	flex-direction: row;
 	justify-content: space-between;
 }
- 	
+
 .boxtitles{
 	font-family: "Avenir";
 	color: #6c6d6c;
@@ -37,9 +37,6 @@ body{
 	border: 2px solid #A5A5A5;
 	text-align: center;
 	vertical-align: middle;
-	font-family: "Comic Sans MS";
-	color:  #FF69B4;
-	font-size: 30px;
 }
 
 /* Song Boxes */
@@ -90,6 +87,30 @@ body{
 
 /* End of Song Boxes */
 
+/* Phase Select Boxes */
+#phaseselect{
+	display: flex;
+	flex-direction: row;
+	width: 20rem;
+}
+
+.selectbox{
+	font-family: "Avenir";
+	font-size: 13px;
+	color: #707070;
+	width: 33%;
+	height: 3rem;
+  display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.beta{
+	margin-left: 0.5rem;
+}
+/* End of Phase Select */
+
 /* Frequency Analysis Boxes */
 
 #frequencies{
@@ -97,7 +118,7 @@ body{
 }
 
 #freqbox{
-	height: 27.3rem;
+	height: 23.4rem;
 	width: 20rem;
 }
 
@@ -123,6 +144,15 @@ body{
 #gamescreen{
 	height: 44.6rem;
 	width: 31rem;
+}
+
+.gamevid{
+	width: 31rem;
+	height: 44.6rem;
+}
+
+#s1p1{
+	display: none;
 }
 
 /* End of Right Pane */

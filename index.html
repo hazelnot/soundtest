@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8"> 
+		<meta charset="UTF-8">
 		<title>Music Matching</title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -19,26 +19,39 @@
 			  		<div class = "boxtitles">Song List</div>
 			  		<div class = "songbox">
 						<div class="spotify"></div>
-			  			<div class="songdata">
+			  			<div class="songdata" id = "rock">
 			  				<div class="songname">Paint It Black</div>
 			  				<div class="artistdata">The Rolling Stones • Aftermath...</div>
 			  			</div>
 			  		</div>
 			  		<div class = "songbox">
 			  			<div class="spotify"></div>
-			  			<div class="songdata">
-			  				<div class="songname">Autumn Leaves</div>
-			  				<div class="artistdata">Chet Baker • My Funny Valentine...</div>
+			  			<div class="songdata" id = "metal">
+			  				<div class="songname">Before I Forget</div>
+			  				<div class="artistdata">Slipknot • Vol. 3: The Subliminal...</div>
 			  			</div>
 			  		</div>
 			  		<div class = "songbox">
 			  			<div class="spotify"></div>
-			  			<div class="songdata">
+			  			<div class="songdata" id = "pop">
 			  				<div class="songname">Hips Don't Lie</div>
 			  				<div class="artistdata">Shakira, Wyclef Jean • Oral...</div>
 			  			</div>
 			  		</div>
 		 		</div>
+
+				<div class = "invisibox" id = "phaseselect">
+					<div  class = "visibox selectbox" id = "box1"><div>
+						1
+					</div></div>
+					<div  class = "visibox selectbox beta" id = "box2"><div>
+						2
+					</div></div>
+					<div  class = "visibox selectbox beta" id = "box3"><div>
+						3
+					</div></div>
+				</div>
+
 		 		<!-- Container for Frequency Analysis Boxes -->
 			 	<div class = "invisibox" id = "frequencies">
 					<div class = "boxtitles">Frequency Analysis</div>
@@ -51,7 +64,9 @@
 		 	<div class="rightpane">
 		 		<div class = "invisibox" id = "games">
 		 			<div class = "boxtitles">Game: <span class="gametitle">Striker 1945</span></div>
-		 			<div class = "visibox" id = "gamescreen"></div>
+		 			<div class = "visibox" id = "gamescreen">
+		 				<video class = "gamevid" id = "s1p1" autoplay loop src = "videos/s1p1.mp4" type = "video/mp4"></video>
+		 			</div>
 		 		</div>
 		 	</div>
 	 	</div>
@@ -59,7 +74,7 @@
 	 		<div class = "boxtitles">Audio Wave</div>
 	 		<div class = "visibox" id = "wave"></div>
 		 </div>
-		<input class = "slider1" type = "range" min = "0" max = "3">
+		<!-- <input class = "slider1" type = "range" min = "0" max = "3"> -->
 	  </div>
 	</div>
 	</body>
